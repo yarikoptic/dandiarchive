@@ -21,6 +21,7 @@ def validate_dandiset_id(dandiset_id):
     return bool(re.match(dandiset_id_pattern, dandiset_id))
 
 
+#TODO change name to create_
 def staging_collection():
     return Collection().createCollection(
         DANDI_STAGING_COLLECTION_NAME, reuseExisting=True,
